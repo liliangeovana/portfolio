@@ -10,9 +10,9 @@
 
     <!--navbar-->
     <section>
-        <nav class="flex items-center justify-between m-0 p-0 bg-customColor">
+        <nav class="flex items-center justify-between m-0 p-0 bg-colorBasic">
             <!-- Logo ou título -->
-            <div class="block text-customColor w-56 p-6 bg-white border-b-customColor border-b-2 text-center font-bold text-2xl uppercase">Portfólio</div>
+            <div class="block text-colorBasic w-56 p-6 bg-white border-b-colorBasic border-b-2 text-center font-bold text-2xl uppercase">Portfólio</div>
 
     
             <!-- MENU HAMBURGUER -->
@@ -28,25 +28,25 @@
             <ul class="hidden sm:flex space-x-4 text-white mr-5">
                 <li class="flex items-center">
                     <button 
-                    class="bg-customColor text-white p-3 font-semibold hover:bg-white hover:text-customColor relative px-4 py-2 transition-all duration-300">
+                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
                     Sobre mim
                 </button>
                 </li>
                 <li>
                     <button 
-                    class=" bg-customColor text-white  font-semibold hover:bg-white hover:text-customColor relative px-4 py-2 transition-all duration-300">
+                    class=" bg-colorBasic text-white  font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
                     Skills
                 </button>
                 </li>
                 <li>
                     <button 
-                    class="bg-customColor text-white p-3 font-semibold hover:bg-white hover:text-customColor relative px-4 py-2 transition-all duration-300">
+                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
                     Projetos
                 </button>
                 </li>
                 <li>
                     <button 
-                    class="bg-customColor text-white p-3 font-semibold hover:bg-white hover:text-customColor relative px-4 py-2 transition-all duration-300">
+                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
                     Contato
                 </button>
                 </li>
@@ -58,7 +58,7 @@
             <div class="flex items-center justify-center h-full">
 
                 <!--CLOSE MENU MOBILE-->
-                <button id="close-menu" class="absolute p-2 bottom-2 text-white bg-customColor rounded-lg text-center w-32 hover:bg-orange-400">
+                <button id="close-menu" class="absolute p-2 bottom-2 text-white bg-colorBasic rounded-lg text-center w-32 hover:bg-orange-400">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8 m-auto">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                       </svg>Voltar                      
@@ -67,25 +67,25 @@
                 <ul class="text-white text-2xl font-medium space-y-4 w-full text-center">
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-customColor hover:text-customColor hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
                             Sobre mim
                         </button>
                     </li>
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-customColor hover:text-customColor hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
                             Skills
                         </button>
                     </li>
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-customColor hover:text-customColor hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
                             Projetos
                         </button>
                     </li>
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-customColor hover:text-customColor hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
                             Contato
                         </button>
                     </li>
@@ -95,16 +95,23 @@
     </section>
 
     <!--about me-->
-    <section class="flex flex-auto  md:flex-row space-x-2 p-4">
+    <section class="ml:flex ml:flex-row-reverse ml:m-5 ml:p-4">
 
-        <div id="profilePicture" class="w-60 mt-10 md:w-48 mb-4 md:mb-0">
-            <img src="./public/assets/img/profile.png" alt="" class="mt-10 rounded-full border-customColor border-2 bg-gray-200 shadow-lg">
+        <div id="profilePicture" 
+        class="w-60 p-6 m-auto mt-4">
+            <img src="./public/assets/img/profile.png" alt="profile.png" 
+            class="w-full h-full rounded-full border-colorBasic border-2 bg-gray-100 shadow-lg">
         </div>
-        
-        <div id="aboutMe" class="w-full m-auto  p-4">
-            <h1 class="text-xl m-auto font-extrabold text-gray-900 sm:text-3xl ">Olá! Me chamo <span class="text-customColor">Lílian!</span></h1>
-            <h2>Front-end Developer</h2>
-            <p class="text-justify leading-7">Estudante de Análise e Desenvolvimento de Sistemas, atualmente estagiária e em início de carreira. Busco aprimorar meus conhecimentos, especialmente na área de desenvolvimento web, pela qual tenho paixão. Estou aberta a oportunidades que contribuam para meu desenvolvimento profissional e disposta a agregar valor a projetos futuros.</p>
+     
+        <div id="aboutMe" class="p-30">
+            <div class= "w-96 m-auto text-center">
+                <h1
+                    class="text-5xl font-bold mb-4 md:text-4xl  md:font-bold md:w-80 md:ml-10"
+                >Olá! Me chamo <span class="text-colorBasic">Lílian Geovana</span>!</h1>
+            </div>
+            <h2 
+                class="text-xl text-center font-medium p-2 mb-4 bg-colorClear bg-opacity-60 rounded uppercase md:text-lg md:mx-5 md:font-semibold">Front-end Developer</h2>
+            <p class="text-lg text-justify leading-8 p-2 pt-0 md:px-5">Estudante de Análise e Desenvolvimento de Sistemas, busco aprimorar meus conhecimentos, especialmente na área de desenvolvimento web, pela qual tenho paixão. Estou aberta a oportunidades que contribuam para meu desenvolvimento profissional e disposta a agregar valor a projetos futuros.</p>
         </div>
     </section>
 
