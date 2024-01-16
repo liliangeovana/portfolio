@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./public/style.css">
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100 dark:bg-colorDark">
 
     <!--navbar-->
     <section class="md:border-b md:border-gray-300">
@@ -135,10 +135,10 @@
 
 
 
-    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80">
+    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80 ">
         <!--text-->
         <div id="textApresentation">
-            <h2 class="text-lg mb-3 font-semibold">Sobre mim</h2>
+            <h2 class="text-lg mb-3 font-semibold dark:text-white">Sobre mim</h2>
             <p class="text-lg text-justify leading-8 p-6 bg-white rounded-lg shadow-sm">
                 Estudante de Análise e Desenvolvimento de Sistemas, busco constantemente aprimorar meus conhecimentos, especialmente na área de desenvolvimento web, pela qual tenho paixão. Estou aberta a oportunidades que contribuam para meu desenvolvimento profissional e disposta a agregar valor a projetos futuros.
             </p>
@@ -148,9 +148,10 @@
 
         <!--skills-->
         <div>
-            <h2 class="text-lg mb-3 font-semibold mt-5">Tecnologias</h2>
+            <h2 class="text-lg mb-3 font-semibold mt-5 dark:text-white">Tecnologias</h2>
             
-            <div class="flex gap-3 justify-center">
+            <div class="flex gap-3 justify-center dark:bg-slate-50
+            dark:rounded-md dark:p-2">
                 <!--HTML-->
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48">
                     <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
@@ -214,29 +215,20 @@
         </div>
 
         <!--contact-->
-        <div class="mt-8" id="contactMe">
-            <h2 class="text-lg mb-5 font-semibold">Contato</h2>
-
-            <div class="mx-">
-
-                <form action="" method="get" class="flex flex-col p-4 border-2 border-colorDetail rounded-md">
-
-                    <label class="my-1" for="userName">Nome</label>
-                    <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName">
-
-                    <label class="my-1" for="userEmail">Email</label>
-                    <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" type="email" name="userEmail" id="userEmail">
-
-                    <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder="">
-
-                    </textarea>
-
-                    <button class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
-                </form>
-                
-            </div>
-
-        </div>
+            <div class="mt-8 md:w-full" id="contactMe">
+                <h2 class="text-lg mb-5 font-semibold dark:text-white">Contato</h2>
+                <div>
+                    <form action="" method="get" class="flex flex-col p-4 border-2 border-colorDetail rounded-md dark:text-white">
+                        <label class="my-1" for="userName">Nome</label>
+                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName">
+                        <label class="my-1" for="userEmail">Email</label>
+                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" type="email" name="userEmail" id="userEmail">
+                        <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder="">
+                        </textarea>
+                        <button class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
+                    </form>
+                </div>
+            </div>  
     </section>
 
 
