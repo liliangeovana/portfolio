@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hover\:bg-white {
-    background: linear-gradient(90deg, #FFFFFF 50%, #E0953F 50%);
+    background: linear-gradient(90deg, #FFFFFF 50%, #807094 50%);
     background-size: 200% 100%;
     background-position: right bottom;
   }
