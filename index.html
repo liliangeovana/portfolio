@@ -28,25 +28,20 @@
             <ul class="hidden sm:flex space-x-4 text-white mr-5">
                 <li class="flex items-center">
                     <button 
-                        class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="sobreMimLink">
+                        class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="apresentation">
                     Sobre mim
                     </button>
                 </li>
+                
                 <li>
                     <button 
-                    class=" bg-colorBasic text-white  font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
-                    Skills
-                </button>
-                </li>
-                <li>
-                    <button 
-                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
+                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="projects">
                     Projetos
                 </button>
                 </li>
                 <li>
                     <button 
-                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
+                    class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="contact">
                     Contato
                 </button>
                 </li>
@@ -58,7 +53,7 @@
             <div class="flex items-center justify-center h-full">
 
                 <!--CLOSE MENU MOBILE-->
-                <button id="close-menu" class="absolute p-2 bottom-2 text-white bg-colorBasic rounded-lg text-center w-32 hover:bg-orange-400">
+                <button id="close-menu" class="absolute p-2 bottom-2 text-white bg-colorBasic rounded-lg text-center w-32 hover:bg-colorDetail">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-8 w-8 m-auto">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
                       </svg>Voltar                      
@@ -67,25 +62,20 @@
                 <ul class="text-white text-2xl font-medium space-y-4 w-full text-center">
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold" id="apresentationMobile">
                             Sobre mim
                         </button>
                     </li>
+                    
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
-                            Skills
-                        </button>
-                    </li>
-                    <li>
-                        <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold" id="projectsMobile">
                             Projetos
                         </button>
                     </li>
                     <li>
                         <button 
-                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold">
+                        class="w-96 p-2 border-2 border-white hover:p-2 hover:border hover:bg-white hover:border-colorBasic hover:text-colorBasic hover:font-semibold" id="contactMobile">
                             Contato
                         </button>
                     </li>
@@ -95,7 +85,7 @@
     </section>
 
           <!--about me-->
-        <div id="aboutMe">
+        <div>
             <section>
                 <div id="details" class="md:w-full bg-colorBasic p-3 text-white">
 
@@ -136,7 +126,7 @@
 
                     <div class="text-center my-4">
                         <button 
-                            class="bg-colorBasic text-white font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300">
+                            class="bg-colorBasic text-white font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="contactProfile">
                         Contate-me!
                         </button>
                     </div>
@@ -145,10 +135,10 @@
 
 
 
-    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-96">
+    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80">
         <!--text-->
-        <div>
-            <h2 class="text-xl mb-3 font-semibold uppercase">Sobre mim</h2>
+        <div id="textApresentation">
+            <h2 class="text-lg mb-3 font-semibold">Sobre mim</h2>
             <p class="text-lg text-justify leading-8 p-6 bg-white rounded-lg shadow-sm">
                 Estudante de Análise e Desenvolvimento de Sistemas, busco constantemente aprimorar meus conhecimentos, especialmente na área de desenvolvimento web, pela qual tenho paixão. Estou aberta a oportunidades que contribuam para meu desenvolvimento profissional e disposta a agregar valor a projetos futuros.
             </p>
@@ -158,7 +148,7 @@
 
         <!--skills-->
         <div>
-            <h2 class="text-xl mb-3 font-semibold mt-5 uppercase">Tecnologias</h2>
+            <h2 class="text-lg mb-3 font-semibold mt-5">Tecnologias</h2>
             
             <div class="flex gap-3 justify-center">
                 <!--HTML-->
@@ -209,8 +199,8 @@
         </div>
 
         <!--projetos-->
-        <div class="bg-colorDetail bg-opacity-96 p-4 rounded-md mt-8">
-            <h2 class="text-xl mb-5 font-semibold text-white uppercase">Projetos</h2>
+        <div id="projectSession" class="bg-colorDetail bg-opacity-96 p-4 rounded-md mt-8">
+            <h2 class="text-lg mb-5 font-semibold text-white">Projetos</h2>
             <div class=" w-fit flex gap-10 p-3">
 
                 <a  href="" target="_blank" rel="noopener noreferrer">
@@ -224,22 +214,24 @@
         </div>
 
         <!--contact-->
-        <div class="mt-8">
-            <h2 class="text-xl mb-5 font-semibold uppercase">Contato</h2>
+        <div class="mt-8" id="contactMe">
+            <h2 class="text-lg mb-5 font-semibold">Contato</h2>
 
-            <div class="mx-80">
+            <div class="mx-">
 
                 <form action="" method="get" class="flex flex-col p-4 border-2 border-colorDetail rounded-md">
 
-                    <label for="userName">Nome</label>
-                    <input type="text" name="userName" id="userName">
+                    <label class="my-1" for="userName">Nome</label>
+                    <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName">
 
-                    <label for="userEmail">Email</label>
-                    <input type="email" name="userEmail" id="userEmail">
+                    <label class="my-1" for="userEmail">Email</label>
+                    <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" type="email" name="userEmail" id="userEmail">
 
-                    <textarea class="w-full p-2 mt-2" name="userMessage" id="userMessage"  placeholder="">
+                    <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder="">
 
                     </textarea>
+
+                    <button class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
                 </form>
                 
             </div>
@@ -248,7 +240,7 @@
     </section>
 
 
-
-    <script src="./public/script.js"></script>
+    <script src="./public/assets/js/menu.js"></script>
+    <script src="./public/assets/js/script.js"></script>
 </body>
 </html>
