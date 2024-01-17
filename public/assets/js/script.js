@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleInput = document.getElementById('toggle');
+    const toggleHandle = document.getElementById('toggleHandle');
+
+    toggleInput.addEventListener('change', function () {
+        const isChecked = toggleInput.checked;
+        const translateValue = isChecked ? 'translate-x-full' : 'translate-x-0';
+        toggleHandle.classList.toggle(translateValue);
+    });
+});
+
 //Scroll
 function contactClick() {
     document.getElementById('contactMe').scrollIntoView({ behavior: 'smooth' });

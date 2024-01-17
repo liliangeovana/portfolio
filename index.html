@@ -9,10 +9,10 @@
 <body class="bg-slate-100 dark:bg-colorDark">
 
     <!--navbar-->
-    <section class="md:border-b md:border-gray-300">
+    <section class="fixed w-full top-0 z-50 md:border-b md:border-gray-300">
         <nav class="flex items-center justify-between m-0 p-0 bg-colorBasic">
             <!-- Logo ou título -->
-            <div class="block text-white w-56 p-6 md:text-center font-bold text-2xl uppercase">Portfólio</div>
+            <div class="text-white w-56 p-3 md:text-center font-bold text-xl uppercase">Portfólio</div>
 
     
             <!-- MENU HAMBURGUER -->
@@ -44,6 +44,12 @@
                     class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="contact">
                     Contato
                 </button>
+                </li>
+
+                <li>  
+                <input type="checkbox" id="toggle" class="hidden">
+                    <div class="w-12 h-6 bg-gray-300 rounded-full p-1">
+                    <div id="toggleHandle" class="bg-white w-5 h-5 rounded-full shadow-md transform"></div>
                 </li>
             </ul>
         </nav>
@@ -87,7 +93,7 @@
           <!--about me-->
         <div>
             <section>
-                <div id="details" class="md:w-full bg-colorBasic p-3 text-white">
+                <div id="details" class="md:w-full bg-colorBasic p-3 text-white mt-12">
 
                     <!--picture-->
                     <div id="profilePicture"
@@ -135,7 +141,8 @@
 
 
 
-    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80 ">
+    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80">
+
         <!--text-->
         <div id="textApresentation">
             <h2 class="text-lg mb-3 font-semibold dark:text-white">Sobre mim</h2>
@@ -218,20 +225,25 @@
             <div class="mt-8 md:w-full" id="contactMe">
                 <h2 class="text-lg mb-5 font-semibold dark:text-white">Contato</h2>
                 <div>
-                    <form action="" method="get" class="flex flex-col p-4 border-2 border-colorDetail rounded-md dark:text-white">
+                    <form action="#" method="POST" class="flex flex-col p-4 border-2 border-colorDetail rounded-md dark:text-white">
+
                         <label class="my-1" for="userName">Nome</label>
-                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName">
+                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName" autocomplete="off">
+
                         <label class="my-1" for="userEmail">Email</label>
-                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" type="email" name="userEmail" id="userEmail">
-                        <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder="">
-                        </textarea>
-                        <button class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
+                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail type="email" name="userEmail" id="userEmail">
+
+                        <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder=""></textarea>
+
+                        <button type="submit" class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
                     </form>
                 </div>
             </div>  
     </section>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./public/assets/js/email.js"></script>
     <script src="./public/assets/js/menu.js"></script>
     <script src="./public/assets/js/script.js"></script>
 </body>
