@@ -16,14 +16,14 @@ function sendEmail(){
         return; // Impede o envio do email se os campos obrigatórios não estiverem preenchidos
     }
 
-    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> Message: ${userMessage.value} `
+    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> ${userMessage.value} `
 
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "lili.ggsb@gmail.com",
         Password : "EE20FF5C1D1E63C0F9793CA8C368768417B0",
         To : 'lili.ggsb@gmail.com',
-        From : `${userEmail.value}`,
+        From : "lili.ggsb@gmail.com",
         Subject : "Olá, vim do seu portfólio",
         Body : bodyMessage
     }).then(
@@ -42,4 +42,8 @@ function sendEmail(){
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     sendEmail();
+
+    userName.value = "";
+    userEmail.value = "";
+    userMessage.value = "";
 })

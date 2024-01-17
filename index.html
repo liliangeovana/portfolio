@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="./public/style.css">
+    <link rel="shortcut icon" href="./public/assets/img/letter.png" title="letter icons" type="image/x-icon">
 </head>
 <body class="bg-slate-100 dark:bg-colorDark">
 
@@ -12,9 +13,9 @@
     <section class="fixed w-full top-0 z-50 md:border-b md:border-gray-300">
         <nav class="flex items-center justify-between m-0 p-0 bg-colorBasic">
             <!-- Logo ou título -->
-            <div class="text-white w-56 p-3 md:text-center font-bold text-xl uppercase">Portfólio</div>
+            <div class="text-white p-4 md:text-center font-bold text-xl uppercase w-fit">Portfólio</div>
 
-    
+            
             <!-- MENU HAMBURGUER -->
             <div class="sm:hidden ml-auto text-white mr-5 pt-1">
                 <button id="menu-toggle">
@@ -25,7 +26,7 @@
             </div>
 
             <!-- TELAS MAIORES-->
-            <ul class="hidden sm:flex space-x-4 text-white mr-5">
+            <ul class="hidden w-fit sm:flex gap-3 text-white">
                 <li class="flex items-center">
                     <button 
                         class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="apresentation">
@@ -33,29 +34,43 @@
                     </button>
                 </li>
                 
-                <li>
+                <li class="flex items-center">
                     <button 
                     class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="projects">
                     Projetos
                 </button>
                 </li>
-                <li>
+                <li class="flex items-center">
                     <button 
                     class="bg-colorBasic text-white p-3 font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="contact">
                     Contato
                 </button>
                 </li>
-
-                <li>  
-                <input type="checkbox" id="toggle" class="hidden">
-                    <div class="w-12 h-6 bg-gray-300 rounded-full p-1">
-                    <div id="toggleHandle" class="bg-white w-5 h-5 rounded-full shadow-md transform"></div>
-                </li>
             </ul>
+
+            <!--toggle button-->
+            <div class="relative py-2 flex w-fit mr-8">
+                <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="26" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M24.90625,3.96875c-0.04297,0.00781 -0.08594,0.01953 -0.125,0.03125c-0.46484,0.10547 -0.79297,0.52344 -0.78125,1v6c-0.00391,0.35938 0.18359,0.69531 0.49609,0.87891c0.3125,0.17969 0.69531,0.17969 1.00781,0c0.3125,-0.18359 0.5,-0.51953 0.49609,-0.87891v-6c0.01172,-0.28906 -0.10547,-0.56641 -0.3125,-0.76172c-0.21094,-0.19922 -0.49609,-0.29687 -0.78125,-0.26953zM10.65625,9.84375c-0.375,0.06641 -0.67578,0.33984 -0.78125,0.70313c-0.10547,0.36719 0.00391,0.75781 0.28125,1.01563l4.25,4.25c0.24219,0.29688 0.62891,0.43359 1.00391,0.34766c0.37109,-0.08594 0.66406,-0.37891 0.75,-0.75c0.08594,-0.375 -0.05078,-0.76172 -0.34766,-1.00391l-4.25,-4.25c-0.20703,-0.22266 -0.50781,-0.33594 -0.8125,-0.3125c-0.03125,0 -0.0625,0 -0.09375,0zM39.03125,9.84375c-0.22656,0.03125 -0.4375,0.14453 -0.59375,0.3125l-4.25,4.25c-0.29687,0.24219 -0.43359,0.62891 -0.34766,1.00391c0.08594,0.37109 0.37891,0.66406 0.75,0.75c0.375,0.08594 0.76172,-0.05078 1.00391,-0.34766l4.25,-4.25c0.3125,-0.29687 0.40234,-0.76172 0.21875,-1.15234c-0.1875,-0.39453 -0.60156,-0.62109 -1.03125,-0.56641zM24.90625,15c-0.03125,0.00781 -0.0625,0.01953 -0.09375,0.03125c-0.0625,0.00391 -0.125,0.01563 -0.1875,0.03125c-0.01172,0.01172 -0.01953,0.01953 -0.03125,0.03125c-5.30469,0.22656 -9.59375,4.54688 -9.59375,9.90625c0,5.50391 4.49609,10 10,10c5.50391,0 10,-4.49609 10,-10c0,-5.33984 -4.25391,-9.64453 -9.53125,-9.90625c-0.03516,0 -0.05859,-0.03125 -0.09375,-0.03125c-0.10156,-0.03906 -0.20703,-0.05859 -0.3125,-0.0625c-0.01953,0 -0.04297,0 -0.0625,0c-0.03125,0 -0.0625,0 -0.09375,0zM24.9375,17c0.01953,0 0.04297,0 0.0625,0c0.03125,0 0.0625,0 0.09375,0c4.375,0.05078 7.90625,3.61328 7.90625,8c0,4.42188 -3.57812,8 -8,8c-4.41797,0 -8,-3.57812 -8,-8c0,-4.39844 3.54688,-7.96484 7.9375,-8zM4.71875,24c-0.55078,0.07813 -0.9375,0.58984 -0.85937,1.14063c0.07813,0.55078 0.58984,0.9375 1.14063,0.85938h6c0.35938,0.00391 0.69531,-0.18359 0.87891,-0.49609c0.17969,-0.3125 0.17969,-0.69531 0,-1.00781c-0.18359,-0.3125 -0.51953,-0.5 -0.87891,-0.49609h-6c-0.03125,0 -0.0625,0 -0.09375,0c-0.03125,0 -0.0625,0 -0.09375,0c-0.03125,0 -0.0625,0 -0.09375,0zM38.71875,24c-0.55078,0.07813 -0.9375,0.58984 -0.85937,1.14063c0.07813,0.55078 0.58984,0.9375 1.14063,0.85938h6c0.35938,0.00391 0.69531,-0.18359 0.87891,-0.49609c0.17969,-0.3125 0.17969,-0.69531 0,-1.00781c-0.18359,-0.3125 -0.51953,-0.5 -0.87891,-0.49609h-6c-0.03125,0 -0.0625,0 -0.09375,0c-0.03125,0 -0.0625,0 -0.09375,0c-0.03125,0 -0.0625,0 -0.09375,0zM15,33.875c-0.22656,0.03125 -0.4375,0.14453 -0.59375,0.3125l-4.25,4.25c-0.29687,0.24219 -0.43359,0.62891 -0.34766,1.00391c0.08594,0.37109 0.37891,0.66406 0.75,0.75c0.375,0.08594 0.76172,-0.05078 1.00391,-0.34766l4.25,-4.25c0.29688,-0.28516 0.38672,-0.72656 0.22656,-1.10547c-0.15625,-0.37891 -0.53516,-0.62109 -0.94531,-0.61328c-0.03125,0 -0.0625,0 -0.09375,0zM34.6875,33.875c-0.375,0.06641 -0.67578,0.33984 -0.78125,0.70313c-0.10547,0.36719 0.00391,0.75781 0.28125,1.01563l4.25,4.25c0.24219,0.29688 0.62891,0.43359 1.00391,0.34766c0.37109,-0.08594 0.66406,-0.37891 0.75,-0.75c0.08594,-0.375 -0.05078,-0.76172 -0.34766,-1.00391l-4.25,-4.25c-0.1875,-0.19922 -0.44531,-0.30859 -0.71875,-0.3125c-0.03125,0 -0.0625,0 -0.09375,0c-0.03125,0 -0.0625,0 -0.09375,0zM24.90625,37.96875c-0.04297,0.00781 -0.08594,0.01953 -0.125,0.03125c-0.46484,0.10547 -0.79297,0.52344 -0.78125,1v6c-0.00391,0.35938 0.18359,0.69531 0.49609,0.87891c0.3125,0.17969 0.69531,0.17969 1.00781,0c0.3125,-0.18359 0.5,-0.51953 0.49609,-0.87891v-6c0.01172,-0.28906 -0.10547,-0.56641 -0.3125,-0.76172c-0.21094,-0.19922 -0.49609,-0.29687 -0.78125,-0.26953z"></path></g></g>
+                </svg>
+                <div id="toggleContainer">
+                    <input type="checkbox" id="toggle" class="hidden">
+                    <label for="toggle" class="cursor-pointer">
+                        <div class="w-10 h-6 py-1 pl-1 bg-slate-300 rounded-full transition-colors" id="toggleContainer">
+                            <div id="toggleHandle" class="bg-white w-4 h-4 rounded-full shadow-md transform transition-transform"></div>
+                        </div>
+                    </label>
+                </div>
+                <svg class=" py-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" width="30" height="26" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.9" d="M8.509 5.75c0-1.493.394-2.96 1.144-4.25h-.081a8.5 8.5 0 1 0 7.356 12.746A8.5 8.5 0 0 1 8.509 5.75Z"/>
+                </svg>
+            </div>
+            
         </nav>
 
         <!--ITENS EM TELAS MENORES-->
-        <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-stone-300 bg-opacity-55 z-50 hidden">
+        <div id="mobile-menu" class="none lg:hidden md:hidden sm:hidden fixed inset-0 bg-stone-300 bg-opacity-55 z-50">
+
             <div class="flex items-center justify-center h-full">
 
                 <!--CLOSE MENU MOBILE-->
@@ -93,12 +108,12 @@
           <!--about me-->
         <div>
             <section>
-                <div id="details" class="md:w-full bg-colorBasic p-3 text-white mt-12">
+                <div id="details" class="md:w-full bg-colorBasic p-3 text-white mt-14">
 
                     <!--picture-->
                     <div id="profilePicture"
                             class="w-60 p-6 m-auto md:w-40 md:p-2 md:mt-0">
-                                <img src="./public/assets/img/profile.png" alt="profile.png"
+                                <img src="./public/assets/img/profile2.png" alt="profile.png"
                                      class="rounded-full border-colorBasic border-2 bg-gray-100 shadow-lg">
                     </div>
 
@@ -130,7 +145,7 @@
                         </a>
                     </div>
 
-                    <div class="text-center my-4">
+                    <div class="hidden text-center my-4 sm:block">
                         <button 
                             class="bg-colorBasic text-white font-semibold hover:bg-white hover:text-colorBasic relative px-4 py-2 transition-all duration-300" id="contactProfile">
                         Contate-me!
@@ -138,15 +153,15 @@
                     </div>
                 </div>
             </section>
+        </div>
 
 
-
-    <section id="informations" class="mt-4 p-4 md:mx-10 lg:mx-80">
+    <section id="informations" class="my-4 p-4 md:mx-10 lg:mx-80">
 
         <!--text-->
         <div id="textApresentation">
             <h2 class="text-lg mb-3 font-semibold dark:text-white">Sobre mim</h2>
-            <p class="text-lg text-justify leading-8 p-6 bg-white rounded-lg shadow-sm">
+            <p class="text-lg text-justify leading-8 p-6 bg-white rounded-lg shadow-sm dark:bg-slate-100">
                 Estudante de Análise e Desenvolvimento de Sistemas, busco constantemente aprimorar meus conhecimentos, especialmente na área de desenvolvimento web, pela qual tenho paixão. Estou aberta a oportunidades que contribuam para meu desenvolvimento profissional e disposta a agregar valor a projetos futuros.
             </p>
         </div>
@@ -157,7 +172,7 @@
         <div>
             <h2 class="text-lg mb-3 font-semibold mt-5 dark:text-white">Tecnologias</h2>
             
-            <div class="flex gap-3 justify-center dark:bg-slate-50
+            <div class="flex gap-3 justify-center dark:bg-slate-100
             dark:rounded-md dark:p-2">
                 <!--HTML-->
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48">
@@ -207,7 +222,7 @@
         </div>
 
         <!--projetos-->
-        <div id="projectSession" class="bg-colorDetail bg-opacity-96 p-4 rounded-md mt-8">
+        <div id="projectSession" class="bg-colorDetail bg-opacity-96 p-4 rounded-md mt-8 dark:bg-colorBasic">
             <h2 class="text-lg mb-5 font-semibold text-white">Projetos</h2>
             <div class=" w-fit flex gap-10 p-3">
 
@@ -223,17 +238,17 @@
 
         <!--contact-->
             <div class="mt-8 md:w-full" id="contactMe">
-                <h2 class="text-lg mb-5 font-semibold dark:text-white">Contato</h2>
+                <h2 class="text-lg mb-5 font-semibold dark:text-white ">Contato</h2>
                 <div>
-                    <form action="#" method="POST" class="flex flex-col p-4 border-2 border-colorDetail rounded-md dark:text-white">
+                    <form action="#" method="POST" class="flex flex-col p-4 border-2 border-colorDetail rounded-md dark:font-semibold dark:bg-slate-100">
 
                         <label class="my-1" for="userName">Nome</label>
                         <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="text" name="userName" id="userName" autocomplete="off">
 
                         <label class="my-1" for="userEmail">Email</label>
-                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail type="email" name="userEmail" id="userEmail">
+                        <input class="px-2 py-1 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail" type="email" name="userEmail" id="userEmail" autocomplete="off">
 
-                        <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  placeholder=""></textarea>
+                        <textarea class="w-full h-24 p-2 mt-2 outline-none border-2 border-colorBasic focus:outline-1 focus:outline-colorDetail required:border-red-500" rows="1" name="userMessage" id="userMessage"  autocomplete="off"></textarea>
 
                         <button type="submit" class="m-auto mt-5 w-40 p-2 bg-colorBasic text-white font-semibold hover:bg-colorDetail ">Enviar</button>
                     </form>
@@ -242,9 +257,20 @@
     </section>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./public/assets/js/email.js"></script>
     <script src="./public/assets/js/menu.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./public/assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
+<footer class="bg-colorBasic text-white text-sm font-semibold p-2">
+    <p>©2024 - Portfólio Lílian Geovana</p>
+    <div id="googleTranslate"></div>
+            <script>
+                function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'pt' }, 'googleTranslate');
+                     }
+            </script>
+</footer>
 </html>
