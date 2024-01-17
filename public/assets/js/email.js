@@ -16,7 +16,7 @@ function sendEmail(){
         return; // Impede o envio do email se os campos obrigatórios não estiverem preenchidos
     }
 
-    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> ${userMessage.value} `
+    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> ${userMessage.value}`
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -28,7 +28,7 @@ function sendEmail(){
         Body : bodyMessage
     }).then(
       message => {
-        if (message == "OK"){git
+        if (message === "OK"){
             Swal.fire({
                 title: "Obrigada!",
                 text: "Mensagem enviada com sucesso!",
