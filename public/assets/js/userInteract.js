@@ -17,11 +17,14 @@ var toggle = document.getElementById('toggle');
     
 
 //Scroll
-// Objeto para lidar com a navegação
+
+
 var mobileMenu = document.getElementById('mobile-menu')
 mobileMenu.classList.toggle('hidden');
 
+// Objeto para lidar com a navegação
 var navigation = {
+    //metodo
     scrollIntoViewSmooth: function(elementId) {
         document.getElementById(elementId).scrollIntoView({ behavior: 'smooth' }); 
     }
