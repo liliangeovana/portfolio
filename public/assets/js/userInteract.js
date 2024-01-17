@@ -30,15 +30,18 @@ var navigation = {
 // Funções específicas de clique
 function contactClick() {
     navigation.scrollIntoViewSmooth('contactMe');
+    mobileMenu.classList.toggle('hidden');
 
 }
 
 function aboutMeClick() {
     navigation.scrollIntoViewSmooth('textApresentation');
+    mobileMenu.classList.toggle('hidden');
 }
 
 function projectClick() {
     navigation.scrollIntoViewSmooth('projectSession');
+    mobileMenu.classList.toggle('hidden');
 }
 
 // Adicionando ouvintes de evento usando Event Delegation
