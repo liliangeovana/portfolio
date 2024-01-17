@@ -5,4 +5,4 @@
 - CSS - Tailwind
 - JavaScript
 - Nodejs
-- 
+- SMTP

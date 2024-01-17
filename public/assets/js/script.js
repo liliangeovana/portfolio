@@ -1,38 +1,66 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const toggleInput = document.getElementById('toggle');
-    const toggleHandle = document.getElementById('toggleHandle');
+//DARK/CLEAR MODE
+var toggle = document.getElementById('toggle');
 
-    toggleInput.addEventListener('change', function () {
-        const isChecked = toggleInput.checked;
-        const translateValue = isChecked ? 'translate-x-full' : 'translate-x-0';
-        toggleHandle.classList.toggle(translateValue);
+    toggle.addEventListener('change', function() {
+        var handle = document.getElementById('toggleHandle');
+       
+        
+        if (toggle.checked) {
+            document.documentElement.classList.add('dark');
+        } else {
+
+            document.documentElement.classList.remove('dark');
+        }
+
+        handle.style.transform = toggle.checked ? 'translateX(100%)' : 'translateX(0)';
     });
-});
+    
 
 //Scroll
+// Objeto para lidar com a navegação
+var navigation = {
+    mobileMenu: document.getElementById('mobile-menu'),
+
+    scrollIntoViewSmooth: function(elementId) {
+        document.getElementById(elementId).scrollIntoView({ behavior: 'smooth' });
+        this.toggleMobileMenu();
+    },
+
+    toggleMobileMenu: function() {
+        this.mobileMenu.classList.toggle('hidden');
+    }
+};
+
+// Funções específicas de clique
 function contactClick() {
-    document.getElementById('contactMe').scrollIntoView({ behavior: 'smooth' });
+    navigation.scrollIntoViewSmooth('contactMe');
 }
 
-function aboutMeClick(){
-    document.getElementById('textApresentation').scrollIntoView({ behavior: 'smooth' });
-
-    var mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu.classList.toggle('hidden');
+function aboutMeClick() {
+    navigation.scrollIntoViewSmooth('textApresentation');
 }
 
-function projectClick(){
-    document.getElementById('projectSession').scrollIntoView({ behavior: 'smooth' });
-
-    var mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu.classList.toggle('hidden');
+function projectClick() {
+    navigation.scrollIntoViewSmooth('projectSession');
 }
 
 
-document.getElementById('contact').addEventListener('click', contactClick);
-document.getElementById('contactMobile').addEventListener('click', contactClick);
-document.getElementById('contactProfile').addEventListener('click', contactClick);
-document.getElementById('apresentation').addEventListener('click', aboutMeClick);
-document.getElementById('apresentationMobile').addEventListener('click', aboutMeClick);
-document.getElementById('projects').addEventListener('click', projectClick);
-document.getElementById('projectsMobile').addEventListener('click', projectClick);
+// Adicionando ouvintes de evento usando Event Delegation
+document.body.addEventListener('click', function(event) {
+    if (event.target.id === 'contact' || event.target.id === 'contactProfile' || event.target.id === 'contactMobile') {
+        contactClick();
+    } else if (event.target.id === 'apresentation' || event.target.id === 'apresentationMobile') {
+        aboutMeClick();
+    } else if (event.target.id === 'projects' || event.target.id === 'projectsMobile') {
+        projectClick();
+    }
+});
+
+// Inicialização
+navigation.toggleMobileMenu();  // Oculta o menu móvel por padrão
+
+
+
+
+
+
