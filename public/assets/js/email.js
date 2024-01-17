@@ -28,7 +28,7 @@ function sendEmail(){
         Body : bodyMessage
     }).then(
       message => {
-        if (message == "OK"){
+        if (message == "OK"){git
             Swal.fire({
                 title: "Obrigada!",
                 text: "Mensagem enviada com sucesso!",
