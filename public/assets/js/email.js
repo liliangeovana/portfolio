@@ -16,7 +16,7 @@ function sendEmail(){
         return; // Impede o envio do email se os campos obrigatórios não estiverem preenchidos
     }
 
-    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> Message: ${userMessage.value} `
+    const bodyMessage = `Nome: ${userName.value} <br> Email: ${userEmail.value} <br> ${userMessage.value} `
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -42,4 +42,8 @@ function sendEmail(){
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     sendEmail();
+
+    userName.value = "";
+    userEmail.value = "";
+    userMessage.value = "";
 })
