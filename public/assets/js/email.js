@@ -6,7 +6,7 @@ const userMessage = document.getElementById("userMessage");
 function sendEmail(){
 
     // Verifica se os campos obrigatórios estão preenchidos
-    if (!userName.value || !userEmail.value || userMessage.value) {
+    if (!userName.value || !userEmail.value) {
         // Exibe uma mensagem de erro
         Swal.fire({
             title: "Campos obrigatórios",
@@ -23,7 +23,7 @@ function sendEmail(){
         Username : "lili.ggsb@gmail.com",
         Password : "EE20FF5C1D1E63C0F9793CA8C368768417B0",
         To : 'lili.ggsb@gmail.com',
-        From : "lili.ggsb@gmail.com",
+        From : `${userEmail.value}`,
         Subject : "Olá, vim do seu portfólio",
         Body : bodyMessage
     }).then(
