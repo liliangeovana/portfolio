@@ -23,7 +23,7 @@ function sendEmail(){
         Username : "lili.ggsb@gmail.com",
         Password : "EE20FF5C1D1E63C0F9793CA8C368768417B0",
         To : 'lili.ggsb@gmail.com',
-        From : `${userEmail.value}`,
+        From : "lili.ggsb@gmail.com",
         Subject : "Olá, vim do seu portfólio",
         Body : bodyMessage
     }).then(
